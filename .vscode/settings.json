@@ -1,0 +1,8 @@
+{
+  "[vue]": {
+    "editor.defaultFormatter": "johnsoncodehk.volar"
+  },
+  "vue-helper.alias": {
+    "@": "./src"
+  },
+}
