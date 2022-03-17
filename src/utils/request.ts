@@ -4,7 +4,7 @@ import { AxiosResponse, AxiosRequestConfig } from 'axios'
 import { ResultDTO } from '../types/index';
 
 const instance = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://netease-cloud-music-api-dun-nu.vercel.app',
   timeout: 20000,
 })
 

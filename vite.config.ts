@@ -9,9 +9,6 @@ export default defineConfig({
     ? '/vue-music/'
     : '/'
   ,
-  base: process.env.NODE_ENV === 'production'
-    ? '/vue-music/'
-    : '/',
   plugins: [
     vue(),
     vueJsx({
