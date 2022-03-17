@@ -40,7 +40,7 @@ const route = useRoute()
 const searchText = ref('')
 const searchTextPlaceholder = ref('')
 const searchTextPlaceholderRealKeyword = ref('')
-searchText.value = route.query?.keywords!.toString()
+searchText.value = route.query?.keywords?.toString() || ''
 
 const router = useRouter()
 

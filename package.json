@@ -1,6 +1,7 @@
 {
   "name": "vue-music",
   "private": true,
+  "homepage": "https://lzy1960.github.io/vue-music",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

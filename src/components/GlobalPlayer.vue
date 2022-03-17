@@ -1,7 +1,7 @@
 <template>
   <div class="global-player">
     <div class="background" :style="{ backgroundImage: `url(${curSongPicUrl})` }"></div>
-    <SIMAudio></SIMAudio>
+    <SimAudio></SimAudio>
     <div class="info">
       <div class="left">
         <div class="circle">
@@ -22,7 +22,7 @@
 <script setup lang="ts">
 import { useStore } from '../store';
 import Lyric from './Lyric.vue';
-import SIMAudio from './SIMAudio.vue';
+import SimAudio from './SimAudio.vue';
 import { storeToRefs } from 'pinia';
 
 const store = useStore()

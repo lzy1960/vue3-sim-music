@@ -37,19 +37,18 @@ watch(isPlaying, () => {
   })
 })
 watch(muted, () => {
-  audioRef.value.muted = muted.value
+  audioRef.value!.muted = muted.value
 })
 watch(volume, () => {
   console.log(volume.value)
-  console.log(audioRef.value.volume)
   store.setMuted(false)
-  return audioRef.value.volume = volume.value
+  return audioRef.value!.volume = volume.value
 })
 onMounted(() => {
-  audioRef.value.volume = volume.value
+  audioRef.value!.volume = volume.value
 })
 watch(changeTime, () => {
-  audioRef.value.currentTime = changeTime.value
+  audioRef.value!.currentTime = changeTime.value
 })
 
 watchEffect(() => {
@@ -134,14 +133,14 @@ const emptied = () => {
 
 const canplay = () => {
   console.log('canplay')
-  store.setTotalTime(audioRef.value.duration)
+  store.setTotalTime(audioRef.value!.duration)
 }
 const ended = () => {
   console.log('ended')
 }
 const timeupdate = () => {
   console.log('timeupdate')
-  store.setCurTime(audioRef.value.currentTime)
+  store.setCurTime(audioRef.value!.currentTime)
 }
 </script>
 
