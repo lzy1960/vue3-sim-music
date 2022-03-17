@@ -58,6 +58,7 @@ const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
     display: flex;
     justify-content: center;
     flex: 1;
+    z-index: 1;
     .left {
       padding: 10px;
       flex: 0 0 300px;
