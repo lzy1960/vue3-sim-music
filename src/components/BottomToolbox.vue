@@ -109,7 +109,7 @@ const changeVolume = () => {
       right: 20px;
       .iconfont {
         margin-right: 10px;
-        color: #409eff;
+        color: #87ceeb;
       }
     }
   }

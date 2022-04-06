@@ -118,7 +118,7 @@ watch(curSongId, () => {
     .current {
       font-size: 32px;
       line-height: 48px;
-      color: skyblue;
+      color: #87ceeb;
     }
   }
 }

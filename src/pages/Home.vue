@@ -64,8 +64,9 @@ const goToPlaylist = (item: TopPlaylist) => {
 <style lang='scss' scoped>
 .item-list {
   .one-item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
-    background-color: #fafafa;
     box-sizing: border-box;
     border-radius: 20px;
     text-align: center;
@@ -73,6 +74,7 @@ const goToPlaylist = (item: TopPlaylist) => {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
     &:hover {
       transform: scale(1.1);
     }
@@ -82,13 +84,15 @@ const goToPlaylist = (item: TopPlaylist) => {
       align-items: center;
       width: 100%;
       height: 100%;
-      background: #f5f7fa;
       color: var(--el-text-color-secondary);
       font-size: 14px;
       vertical-align: middle;
     }
     .name {
       padding: 10px 20px;
+      background-color: #f6f6f6;
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

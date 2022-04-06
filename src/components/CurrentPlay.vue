@@ -2,8 +2,12 @@
   <div class="current-play">
     <el-image :src="curSongPicUrl"></el-image>
     <div class="right">
-      <div class="title">{{ curSongTitle }}</div>
-      <div class="author">{{ curSongAuthor }}</div>
+      <el-tooltip :content="curSongTitle" placement="right">
+        <div class="title">{{ curSongTitle }}</div>
+      </el-tooltip>
+      <el-tooltip :content="curSongAuthor" placement="right">
+        <div class="author">{{ curSongAuthor }}</div>
+      </el-tooltip>
     </div>
   </div>
 </template>
@@ -30,6 +34,15 @@ const { curSongPicUrl, curSongTitle, curSongAuthor } = storeToRefs(store)
     width: 100px;
     margin-left: 20px;
     text-align: left;
+    .title,
+    .author {
+      -webkit-line-clamp: 2;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-break: break-all;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+    }
     .title {
       font-size: 20px;
       font-weight: 700;

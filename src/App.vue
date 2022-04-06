@@ -28,11 +28,12 @@ const store = useStore()
   overflow: hidden;
 }
 .el-header {
-  background-color: #409eff;
+  background-color: #87ceeb;
   display: flex;
   align-items: center;
 }
 .el-main {
+  background-color: #87ceeb;
   height: calc(100vh - 60px - 120px);
   overflow: auto;
 }

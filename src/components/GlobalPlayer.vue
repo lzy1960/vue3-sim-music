@@ -50,8 +50,8 @@ const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
     background-color: rgb(7, 67, 102);
     background-size: cover;
     background-position: center;
-    filter: blur(10px);
-    transform: scale(1.03);
+    filter: blur(20px);
+    transform: scale(1.08);
   }
   .info {
     max-width: 1200px;
