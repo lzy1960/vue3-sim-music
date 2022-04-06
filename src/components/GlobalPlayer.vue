@@ -39,6 +39,7 @@ const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
   bottom: 120px;
   left: 0;
   background-color: #fff;
+  overflow: hidden;
   box-sizing: border-box;
   .background {
     position: absolute;
@@ -50,6 +51,7 @@ const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
     background-size: cover;
     background-position: center;
     filter: blur(10px);
+    transform: scale(1.03);
   }
   .info {
     max-width: 1200px;
