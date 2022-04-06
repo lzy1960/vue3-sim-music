@@ -1,7 +1,9 @@
 <template>
   <el-header>
     <el-col :span="8">
-      <el-button @click="goToHome" type="text" style="color: #fff;">这是头部</el-button>
+      <el-button @click="goToHome" type="text" style="color: #fff;">
+        <span class="logo">SIM MUSIC</span>
+      </el-button>
     </el-col>
     <el-col :span="8">
       <SimSearch></SimSearch>
@@ -38,8 +40,10 @@ import { ref } from 'vue';
 import { useStore } from '../store/index';
 import SimSearch from './SimSearch.vue';
 import { useRouter } from 'vue-router';
+import { storeToRefs } from 'pinia';
 
 const store = useStore()
+const { isGlobalShow } = storeToRefs(store)
 const login = () => {
   console.log('登录')
 }
@@ -49,6 +53,7 @@ const logout = () => {
 
 const router = useRouter()
 const goToHome = () => {
+  isGlobalShow.value = false
   router.push({
     name: 'home'
   })
@@ -56,4 +61,8 @@ const goToHome = () => {
 </script>
 
 <style lang='scss' scoped>
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
 </style>
