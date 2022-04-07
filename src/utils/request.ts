@@ -9,13 +9,13 @@ const instance = axios.create({
 })
 
 instance.interceptors.request.use((config) => {
-  const token = localStorage.getItem('token')
-  console.log(token)
-  if (token) {
-    console.log('请求头不为空')
-    console.log(config)
-    config.headers!.token = token
-  }
+  // const token = localStorage.getItem('token')
+  // console.log(token)
+  // if (token) {
+  //   console.log('请求头不为空')
+  //   console.log(config)
+  //   config.headers!.token = token
+  // }
   return config
 }, err => {
   return Promise.reject(err)

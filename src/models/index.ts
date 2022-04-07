@@ -38,7 +38,6 @@ export type Song = {
   mark: number
   mvid: number | null
   name: string
-  rUrl: null
   rtype: number
   status: number
 }

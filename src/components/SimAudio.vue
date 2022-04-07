@@ -58,7 +58,7 @@ watchEffect(() => {
 // 如果id变了，就保存到localStorage里
 watch(curSongId, async () => {
   console.log(curSongId.value)
-  localStorage.setItem('curSongId', curSongId.value + '')
+  // localStorage.setItem('curSongId', curSongId.value + '')
   // searchUrl()
   const requestUrl = await searchUrl(curSongId.value)
   if (requestUrl) {
@@ -124,7 +124,7 @@ const playSong = async (item: Song) => {
   })
 }
 // 先从localStorage里拿到id
-store.setSongId(Number(localStorage.getItem('curSongId')))
+// store.setSongId(Number(localStorage.getItem('curSongId')))
 
 const emptied = () => {
   console.log('emptied')
