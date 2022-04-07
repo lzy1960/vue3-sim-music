@@ -130,6 +130,20 @@ const playSong = (item: Song) => {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  padding: 20px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+  }
   .left {
     top: 0;
     .el-image {
@@ -138,10 +152,14 @@ const playSong = (item: Song) => {
       width: 200px;
       height: 200px;
       margin-right: 20px;
+      box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
     }
   }
   .right {
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
     .title {
       margin-bottom: 10px;
       font-weight: 700;

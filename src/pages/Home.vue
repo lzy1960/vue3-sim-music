@@ -74,7 +74,7 @@ const goToPlaylist = (item: TopPlaylist) => {
     overflow: hidden;
     cursor: pointer;
     transition: all 0.2s ease;
-    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.1);
     &:hover {
       transform: scale(1.1);
     }
@@ -87,6 +87,7 @@ const goToPlaylist = (item: TopPlaylist) => {
       color: var(--el-text-color-secondary);
       font-size: 14px;
       vertical-align: middle;
+      background-color: #f6f6f6;
     }
     .name {
       padding: 10px 20px;

@@ -26,14 +26,25 @@ const store = useStore()
 .el-container {
   height: 100vh;
   overflow: hidden;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("https://pc-index-skin.cdn.bcebos.com/883531d6c79a2810ff689e7a6896d263.jpg?x-bce-process=image/crop,x_286,y_89,w_1213,h_757");
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 .el-header {
-  background-color: #87ceeb;
+  // background-color: #87ceeb;
   display: flex;
   align-items: center;
 }
 .el-main {
-  background-color: #87ceeb;
+  // background-color: #87ceeb;
   height: calc(100vh - 60px - 120px);
   overflow: auto;
 }
@@ -49,14 +60,14 @@ const store = useStore()
 .move-enter-active,
 .move-leave-active {
   transition: all 0.5s ease;
-  transform: translateY(0);
+  transform: translate(0, 0) scale(1);
 }
 .move-enter-from,
 .move-leave-to {
-  transform: translateY(110%);
+  transform: translate(-50%, 100%) scale(0);
 }
 .move-leave-from,
 .move-enter-to {
-  transform: translateY(0);
+  transform: translate(0, 0) scale(1);
 }
 </style>

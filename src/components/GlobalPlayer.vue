@@ -1,6 +1,11 @@
 <template>
   <div class="global-player">
     <div class="background" :style="{ backgroundImage: `url(${curSongPicUrl})` }"></div>
+    <el-link
+      @click="isGlobalShow = false"
+      class="expand-icon iconfont icon-exit-fullscreen"
+      :underline="false"
+    ></el-link>
     <SimAudio></SimAudio>
     <div class="info">
       <div class="left">
@@ -26,7 +31,7 @@ import SimAudio from './SimAudio.vue';
 import { storeToRefs } from 'pinia';
 
 const store = useStore()
-const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
+const { curSongTitle, curSongAuthor, curSongPicUrl, isGlobalShow } = storeToRefs(store)
 </script>
 
 <style lang='scss' scoped>
@@ -34,13 +39,14 @@ const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 60px - 120px);
+  height: calc(100vh - 60px - 60px);
   position: absolute;
   bottom: 120px;
   left: 0;
   background-color: #fff;
   overflow: hidden;
   box-sizing: border-box;
+  z-index: 10;
   .background {
     position: absolute;
     width: 100%;
@@ -52,6 +58,15 @@ const { curSongTitle, curSongAuthor, curSongPicUrl } = storeToRefs(store)
     background-position: center;
     filter: blur(20px);
     transform: scale(1.08);
+  }
+  .expand-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    right: 50px;
+    color: #eee;
+    font-size: 24px;
   }
   .info {
     max-width: 1200px;

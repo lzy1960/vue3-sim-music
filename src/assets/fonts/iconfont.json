@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1138743",
+      "name": "full",
+      "font_class": "full",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "14629170",
+      "name": "exit-fullscreen",
+      "font_class": "exit-fullscreen",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
       "icon_id": "7594167",
       "name": "24gf-playlistMusic2",
       "font_class": "24gf-playlistMusic2",

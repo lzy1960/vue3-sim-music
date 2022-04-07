@@ -24,7 +24,6 @@
             <span class="iconfont icon-24gf-next"></span>
           </template>
         </el-button>
-        <el-link @click="showPlayer">{{ isGlobalShow ? '收起' : '展开' }}</el-link>
       </div>
       <div class="volume">
         <i
@@ -76,7 +75,7 @@ const changeVolume = () => {
   padding: 20px 0;
   background-color: #fff;
   box-sizing: border-box;
-  z-index: 9;
+  z-index: 11;
   .wrapper {
     display: flex;
     align-items: center;
