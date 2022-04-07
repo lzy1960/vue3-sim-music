@@ -11,6 +11,7 @@
   "src/components/GlobalPlaylist.vue": [],
   "src/components/BottomToolbox.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
   "src/components/BottomToolbox.vue": [],
+  "src/config/index.ts": [],
   "src/utils/request.ts": [],
   "src/apis/index.ts": [],
   "src/components/SimSearch.vue?vue&type=style&index=0&scoped=true&lang.scss": [],
@@ -4887,35 +4888,35 @@
     "/assets/vendor.70dc73e6.js"
   ],
   "src/pages/Home.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/Home.3a9c1144.js",
+    "/assets/Home.e01b2c50.js",
     "/assets/Home.cf9ffed5.css"
   ],
   "src/pages/Home.vue": [
-    "/assets/Home.3a9c1144.js",
+    "/assets/Home.e01b2c50.js",
     "/assets/Home.cf9ffed5.css"
   ],
   "src/pages/SearchList.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/SearchList.7f2c6ef5.js",
+    "/assets/SearchList.c1684961.js",
     "/assets/SearchList.dde51a43.css"
   ],
   "src/pages/SearchList.vue": [
-    "/assets/SearchList.7f2c6ef5.js",
+    "/assets/SearchList.c1684961.js",
     "/assets/SearchList.dde51a43.css"
   ],
   "src/pages/SongInfo.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/SongInfo.63dc6397.js",
+    "/assets/SongInfo.1fc185b5.js",
     "/assets/SongInfo.888fbf59.css"
   ],
   "src/pages/SongInfo.vue": [
-    "/assets/SongInfo.63dc6397.js",
+    "/assets/SongInfo.1fc185b5.js",
     "/assets/SongInfo.888fbf59.css"
   ],
   "src/pages/Playlist.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/Playlist.a1e3e61a.js",
+    "/assets/Playlist.0141a24c.js",
     "/assets/Playlist.d6ae99ca.css"
   ],
   "src/pages/Playlist.vue": [
-    "/assets/Playlist.a1e3e61a.js",
+    "/assets/Playlist.0141a24c.js",
     "/assets/Playlist.d6ae99ca.css"
   ]
 }
