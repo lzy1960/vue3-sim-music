@@ -5,10 +5,10 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  publicDir: process.env.NODE_ENV === 'production'
-    ? '/vue-music/'
-    : '/'
-  ,
+  // publicDir: process.env.NODE_ENV === 'production'
+  //   ? '/vue-music/'
+  //   : '/public/'
+  // ,
   plugins: [
     vue(),
     vueJsx({
@@ -28,6 +28,9 @@ export default defineConfig({
     }
   },
   server: {
+    watch: {
+      ignored: ['!**/node_modules/**']
+    },
     proxy: {
       '^/api': {
         target: 'https://netease-cloud-music-api-dun-nu.vercel.app',
