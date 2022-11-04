@@ -1,7 +1,7 @@
 {
   "name": "vue3-sim-music",
   "private": true,
-  "homepage": "https://lzy1960.github.io/vue3-sim-music",
+  "homepage": "https://vue3-sim-music.netlify.app/",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
