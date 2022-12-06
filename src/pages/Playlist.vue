@@ -181,7 +181,7 @@ const playSong = (item: Song) => {
           font-weight: 700;
           margin-right: 20px;
           &.playing {
-            color: #87ceeb;
+            color: #452243;
           }
         }
         .desc {

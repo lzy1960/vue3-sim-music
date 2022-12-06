@@ -1,6 +1,10 @@
 <template>
   <div class="progress">
-    <el-slider v-model="nowTime" @change="timeChange" :format-tooltip="formatTooltip"></el-slider>
+    <el-slider
+      v-model="nowTime"
+      @change="timeChange"
+      :format-tooltip="formatTooltip"
+    ></el-slider>
   </div>
 </template>
 
@@ -35,9 +39,14 @@ const formatTooltip = (value: number) => formatSeconds(totalTime.value * (value 
   text-align: center;
   position: absolute;
   top: -15px;
-  .el-slider {
+
+  .el-slider::v-deep {
     text-align: center;
     margin: 0 auto;
+
+    .el-slider__runway {
+      background-color: rgba(0, 0, 0, 0);
+    }
   }
 }
 </style>

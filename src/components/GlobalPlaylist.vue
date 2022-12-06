@@ -38,7 +38,7 @@ const { playlist, curSongId } = storeToRefs(store)
     padding: 10px 0;
     cursor: pointer;
     &.playing {
-      color: #87ceeb;
+      color: #452243;
     }
   }
   .title {

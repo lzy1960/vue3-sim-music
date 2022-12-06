@@ -12,10 +12,16 @@
       </span>
     </div>
     <div class="right">
-      <el-tooltip :content="curSongTitle" placement="right">
+      <el-tooltip
+        :content="curSongTitle"
+        placement="right"
+      >
         <div class="title">{{ curSongTitle }}</div>
       </el-tooltip>
-      <el-tooltip :content="curSongAuthor" placement="right">
+      <el-tooltip
+        :content="curSongAuthor"
+        placement="right"
+      >
         <div class="author">{{ curSongAuthor }}</div>
       </el-tooltip>
     </div>
@@ -40,6 +46,7 @@ const { curSongPicUrl, curSongTitle, curSongAuthor, isGlobalShow } = storeToRefs
     position: relative;
     width: 80px;
     height: 80px;
+
     .cover {
       display: inline-block;
       position: absolute;
@@ -47,12 +54,14 @@ const { curSongPicUrl, curSongTitle, curSongAuthor, isGlobalShow } = storeToRefs
       height: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(69, 34, 67, 0.2);
       opacity: 0;
       transition: opacity 0.3s ease;
+
       &:hover {
         opacity: 1;
       }
+
       .el-link {
         width: 100%;
         height: 100%;
@@ -60,10 +69,12 @@ const { curSongPicUrl, curSongTitle, curSongAuthor, isGlobalShow } = storeToRefs
       }
     }
   }
+
   .right {
     width: 100px;
     margin-left: 20px;
     text-align: left;
+
     .title,
     .author {
       -webkit-line-clamp: 2;
@@ -73,12 +84,14 @@ const { curSongPicUrl, curSongTitle, curSongAuthor, isGlobalShow } = storeToRefs
       -webkit-box-orient: vertical;
       display: -webkit-box;
     }
+
     .title {
       font-size: 20px;
       font-weight: 700;
       color: #333;
       margin-bottom: 5px;
     }
+
     .author {
       font-size: 14px;
       color: #999;
